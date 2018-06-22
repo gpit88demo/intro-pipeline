@@ -5,8 +5,11 @@ pipeline {
   stages {
     stage('Say Hello') {
       steps {
-        echo 'Welcome to Blue Ocean'
+        echo "Welcome to Blue Ocean ${MY_NAME}"
       }
     }
+  }
+  environment {
+    MY_NAME = 'Guru'
   }
 }
